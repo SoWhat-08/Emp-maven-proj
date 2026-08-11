@@ -21,6 +21,11 @@ public class EmployeeController {
         return service.getAllEmployees();
     }
 
+    @GetMapping("/health")
+    public String health() {
+    	return "Employee API is running";
+    }
+
     @GetMapping("/{id}")
     public Employee getEmployee(@PathVariable Long id) {
         return service.getEmployee(id);
