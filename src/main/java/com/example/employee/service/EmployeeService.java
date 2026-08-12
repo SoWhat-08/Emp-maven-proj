@@ -48,4 +48,12 @@ public class EmployeeService {
     public boolean deleteEmployee(Long id) {
         return employees.removeIf(employee -> employee.getId().equals(id));
     }
+
+    // Developer B modification
+    public List<Employee> searchEmployeesByDepartment(String department) {
+        return employees.stream()
+                .filter(employee ->
+                        employee.getDepartment().equalsIgnoreCase(department))
+                .toList();
+    }
 }
