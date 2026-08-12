@@ -17,7 +17,8 @@ public class EmployeeService {
     }
 
     public List<Employee> getAllEmployees() {
-        return employees; //Developer A
+        return employees; // Developer A and Developer B changes resolved
+
     }
 
     public Employee getEmployee(Long id) {
