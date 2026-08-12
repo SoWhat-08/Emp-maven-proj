@@ -22,7 +22,7 @@ java -jar target/employee-management-1.0.0.jar
 ## Docker
 
 docker build -t employee-management:latest .
-docker run -d --name employee-app -p 8080:8080 employee-management:latest
+docker run -d --name employee-app -p 8060:8060 employee-management:latest
 
 ## Git branch scenario
 
