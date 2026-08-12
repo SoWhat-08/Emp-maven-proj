@@ -30,12 +30,7 @@ public class EmployeeController {
     public Employee getEmployee(@PathVariable Long id) {
         return service.getEmployee(id);
     }
-
-    @GetMapping("/health")
-    public String health() {
-    	return "Employee API is running";
-    }
-
+    
     @PostMapping
     public Employee addEmployee(@RequestBody Employee employee) {
         return service.addEmployee(employee);
