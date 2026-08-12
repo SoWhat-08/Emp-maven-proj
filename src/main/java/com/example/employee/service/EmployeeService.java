@@ -49,7 +49,8 @@ public class EmployeeService {
         return employees.removeIf(employee -> employee.getId().equals(id));
     }
 
-    // Developer B modification
+   
+    // Developer B modification - Updated
     public List<Employee> searchEmployeesByDepartment(String department) {
         return employees.stream()
                 .filter(employee ->
